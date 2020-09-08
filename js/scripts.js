@@ -12,9 +12,8 @@ $(document).ready(function(){
 
   $(".goTop").click(function(){scroll(0,0)});
 
-  $('.menu-toggler').click(function(){
-    $(this).toggleClass("active");
-    $(".navbar-menu").toggleClass("active");
+  $('.menu-toggler').on('click', function(){
+    $('.navbar-menu').collapse('hide');
   });
 
   $(".works").magnificPopup({
