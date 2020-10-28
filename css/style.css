@@ -358,7 +358,6 @@ img{
   background: linear-gradient(45deg, rgba(1, 1, 44, 0.466), rgba(0, 0, 12, 0.514)),url(/img/work8.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 9rem;
 }
 .quote_h2{
   color: #f1f1f1;
