@@ -358,14 +358,18 @@ img{
   background: linear-gradient(45deg, rgba(1, 1, 44, 0.466), rgba(0, 0, 12, 0.514)),url(/img/work8.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 15rem
+
 }
 .quote_h2{
   color: #f1f1f1;
+  font-size: 1rem !important;
   padding: 1rem;
   text-align: center;
-}.quote_h3{
+}
+.quote_h3{
   color: #f1f1f1;
+  font-size: 0.9rem !important;
+  padding: 1rem;
   padding-bottom: 1rem;
   text-align: center;
 }
