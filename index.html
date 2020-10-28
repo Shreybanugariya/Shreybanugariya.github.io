@@ -1,329 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shrey Banugaria</title>
-  <link rel="shortcut icon" href="images/code-icon.png" type="image/x-icon"/>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="inner-width">
-      <a href="#" class="logo">Shrey Banugaria</a>
-      <button class="menu-toggler">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-menu">
-        <a href="#home" data-toggle = "collapse" data-target = ".navbar-menu.show">Home</a>
-        <a href="#about">About</a>
-        <a href="#strengths">Strengths</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Acheivements</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Home -->
-  <section id="home">
-    <div class="inner-width">
-      <div class="content">
-        <h1></h1>
-        <div class="sm">
-          <a href="https://github.com/Shreybanugariya" class="fab fa-github"></a>
-          <a href="https://www.linkedin.com/in/shrey-banugaria/" class="fab fa-linkedin-in"></a>
-          <a href="https://twitter.com/BanugariyaShrey" class="fab fa-twitter"></a>
-          <a href="https://www.instagram.com/shreybanugaria/?hl=en" class="fab fa-instagram"></a>          
-          <a href="https://www.facebook.com/shrey.banugariya" class="fab fa-facebook-f"></a>
-        </div>
-        <div class="buttons">
-          <a href="#contact">Contact me</a>
-          <a href="Shrey's Resume.pdf">Download CV</a>
-        </div>
-      </div>
-    </div>
-  </section>
+        <link rel="stylesheet" href="/css/style.css">
 
-  <!-- About -->
-  <section id="about">
-    <div class="inner-width">
-      <h1 class="section-title">About</h1>
-      <div class="about-content">
-        <img src="images/Profile_Shrey.jpg" alt="Profile" class="about-pic">
-        <div class="about-text">
-          <h2>About Me</h2>
-          <h3>
-            <span>Python Programing</span>
-            <span>Back-End Development</span>
-            <span>Front End Developer</span>
-          </h3>
-          <p>
-            With the quest to make this world a beautiful place to live in, I want to learn things that make other things possible and that lead me to learn about developemnt and I am completely enjoying my journey in this logical world of binary.
-          </p>
-        </div>
-      </div>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <div class="skills">
-        <div class="skill">
-          <div class="skill-info">
-            <span>Web Design (Bootstrap, jquery, Materialise CSS)</span>
-            <span>90%</span>
-          </div>
-          <div class="skill-bar html"></div>
-        </div>
+        <title>Shrey Banugaria</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Shrey Banugaria</a>
+                </div>
 
-        <div class="skill">
-          <div class="skill-info">
-            <span>Python Programing</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar css"></div>
-        </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-        <div class="skill">
-          <div class="skill-info">
-            <span>Javascript</span>
-            <span>75%</span>
-          </div>
-          <div class="skill-bar js"></div>
-        </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-        <div class="skill">
-          <div class="skill-info">
-            <span>C, C++</span>
-            <span>60%</span>
-          </div>
-          <div class="skill-bar php"></div>
-        </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I am <br><span class="home__title-color">Shrey Banugaria</span><br>I build Web Apps</h1>
 
-        <div class="skill">
-          <div class="skill-info">
-            <span>Node JS</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-bar Nodejs"></div>
-        </div>
+                    <a href="#contact" class="button">Contact</a>
+                    
+                </div>
 
-        <div class="skill">
-          <div class="skill-info">
-            <span>Django</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar cs"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <div class="home__social">
+                  <a href="Shrey's Resume.pdf" class="button">Resume</a> 
+                </div>
 
-  <!-- Strengths -->
-  <section id="strengths" class="dark">
-    <div class="inner-width">
-      <h1 class="section-title">Strengths</h1>
-      <div class="services">
-        <div class="service">
-          <i class="icon fas fa-comments"></i>
-          <h4>Oral and Written Communication</h4>
-          <p>Have Participated in number of group dicussions and speech competitions. </p>
-        </div>
+                <div class="home__img">    
+                    <img src="/img/Profile_Shrey_small.jpg" alt="">
+                </div>
+            </section>
 
-        <div class="service">
-          <i class="icon fas fa-thumbs-up"></i>
-          <h4>Reliable and Consistent</h4>
-          <p>Not just the report card but other acheivements are in positive progression.</p>
-        </div>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-        <div class="service">
-          <i class="icon fas fa-database"></i>
-          <h4>Team Building and Team Work</h4>
-          <p>Working and knowing different ideas and learning new things makes challenges fun</p>
-        </div>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/img/Profile_Shrey.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Shrey Banugaria</h2>
+                        <p class="about__text">I am currently a final year student of Computer Engineering @ Gandhinagar Institute of Technology, Gujarat.</p><br>
+                        <p class="about__text">With the quest to make this world a beautiful place to live in, I want to learn things that make other things possible and that lead me to learn about developemnt and, I am completely enjoying my journey in this logical world of binary.</p><br>
+                        <p class="about__text">My ambition is to learn new things and make myself available for everything.</p><br>
+                        
+                        <a href="Shrey's Resume.pdf" class="button">Resume</a> 
+                    </div>  
+                                                    
+                </div>
+            </section>
+             <!-- =====Experience===== -->
+             <h2 class="section-title">Experience</h2>
+             <section class="experience section" id="about">
+               
+ 
+               <div class="about__container bd-grid">
+                 <div>
+                   <p class="exp_content_title"> Intern @ Fowex Ventures Pvt Ltd.</p>
+                     <p class="exp_content"><i class='bx bxs-log-in-circle'  style="font-size: 1rem;"></i> Working as a Full Stack Web Developer</p>
+                     <p class="exp_content"><i class='bx bxs-log-in-circle'  style="font-size: 1rem;"></i> Building their main website along with an e-commerce website for the company.</p>
+                             
+               </div> 
+ 
+                   <div class="about__img">
+                   </div>                              
+               </div>
+           </section>
 
-        <div class="service">
-          <i class="icon fas fa-check"></i>
-          <h4>Commited to Life Long Learning</h4>
-          <p>Knowing how things work facinates me and my reading habits gives me an aid to it.</p>
-        </div>
-        
-       
-      </div>
-    </div>
-  </section>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <!-- <h2 class="skills__subtitle">Profesional Skills</h2> -->
+                <div class="skills__container bd-grid">          
+                    <div>            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-  <!-- Projects -->
-  <section id="projects">
-    <div class="inner-width">
-      <h1 class="section-title">Projects</h1>
-      <div class="time-line">
-        <div class="block">
-          <h3>Self Solving Sudoku</h3>
-          <h4>Python, Backtracking Algorithm</h4>
-          
-        </div>
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                           
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Bootstrap</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>              
+                      <div class="skills__data">
+                        <div class="skills__names">
+                          <img src="img/python-logo-24.png" class="python_icon" alt="">
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__html">
 
-        <div class="block">
-          <h3>Hospital Management System</h3>
-          <h4>C#, CURD operations, SQL</h4>
-          
-        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                          <i class='bx bxl-nodejs skills__icon'></i>
+                            <span class="skills__name">Node JS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                          <i class='bx bx-code skills__icon' ></i>
+                            <span class="skills__name">Django</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-coin-stack skills__icon'></i>
+                            <span class="skills__name">MongoDb, SQL</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </section>
+           <div class="quote">
+             <h2 class="quote_h2">Its our Choices far more than our abilities that makes us who we are</h2>
+             <h3 class="quote_h3">-Albus Dumbledore</h3>
+           </div>
 
-        <div class="block">
-          <h3>Live Ploting of Covid Case on Indian Map</h3>
-          <h4>Mapbox, Python(Flask), HTML, CSS</h4>
-          
-        </div>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
 
-        <div class="block">
-          <h4>Restarunt Booking and Waiting System</h4>
-          <h3>Django, Bootstrap, Javascript, Jquery</h3>
-          
-        </div>
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Sudoku_Solver_through-Backtracking" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                       <div class="work_title">Self Solving Sudoku</div>
+                       <div class="work_desc">A "Back-Tracking" alogrithm implemented in python solves Sudoku by itself. </div>
+                       <div class="work_caption">Python, Back-Tracking</div>
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Markdown-Blog-in-NodeJs" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">MarkDown Blog</div>
+                      <div class="work_desc">A Blog WebApp which allows user to create, read, delete and to edit them in markdown.</div>
+                      <div class="work_caption">Node Js, Express Js, MongoDb</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Restaurant_Booking_and_Waiting_System_in_Django" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Hotel Booking and Waiting App</div>
+                      <div class="work_desc">A Website that displays the waiting Queue, allows user to add wating and book a table.</div>
+                      <div class="work_caption">Django, JS, Bootstrap</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Startup Stem</div>
+                      <div class="work_desc">A Hackathon Project of DIPP for providing a platform for startups to find mentors.</div>
+                      <div class="work_caption">Flask, Js, Bootstrap</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Plotting-Cases-on-Indian-Map" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Plotting Covid Cases on Indian Map</div>
+                      <div class="work_desc">A site that scraps data from Gov. website and post the data on the map. It displays Recovered, Positive and Casualty cases</div>
+                      <div class="work_caption">Map-Box, Bootstrap, JS</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Hospital_Management_System_in_CSharp_C" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Hospital Managment System</div>
+                      <div class="work_desc">A Desktop application that perfrms CRUD operations and has a seperate inventory for the Hospital.</div>
+                      <div class="work_caption">C#, SQl</div> 
+                    </div>
+                </div>
+            </section>
 
-        <div class="block">
-          <h4>To-do List</h4>
-          <h3>Django, Bootstrap</h3>
-          
-        </div>
+            <!--===== CONTACT =====-->
+            <h2 class="section-title">Contact</h2>
+            <section class="contact section" id="contact">
+                
 
-        <div class="block">
-          <h4>E-comerce Website </h4>
-          <h3>Django, Bootstrap</h3>
-          
-        </div>
-      </div>
-      <hr>
-      <h1 class="section-title" style="margin-bottom: 30px; margin-top: 30px;">Certificates</h1>
-      <div class="time-line">
-        <div class="block">
-          <h3>Winner of SIH 2019</h3>
-          <h4>IIT Kanpur</h4>
-          
-        </div>
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                      <div class="footer__social">
+                        <a href="https://github.com/Shreybanugariya" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.facebook.com/shrey.banugariya" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://twitter.com/BanugariyaShrey" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                        <a href="tel:9664840121" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
+                        <a href="https://www.linkedin.com/in/shrey-banugaria/" class="footer__icon"><i class='bx bxl-linkedin-square'></i></a>
+                        
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <div class="block">
-          <h3>Modern Javascript ES6</h3>
-          <h4>Coursera</h4>
-          
-        </div>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            
+           
+            <p class="footer__title">&#169; Shrey Banugaria</p>
+        </footer>
 
-        <div class="block">
-          <h3>HTML and CSS Productivity Hacks</h3>
-          <h4>Udemy</h4>
-          
-        </div>
 
-        <div class="block">
-          <h4>5 star Batch in Python</h4>
-          <h3>HackerRank</h3>
-          
-        </div>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        
-      </div>
-      <hr>
-    </div>
-  </section>
+        <!--===== MAIN JS =====-->
+        <script src="/js/index.js"></script>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Works -->
-  <section id="achievements" class="yellow">
-    <div class="inner-width">
-      <h1 class="section-title">Acheivements</h1>
-      <div class="works">
-        <a href="images/works/8.png" class="work">
-          <img src="images/works/8.png" alt="">
-          <div class="info">
-            <h3>Winner of SIH 2019</h3>
-            <div class="cat">IIT Kanpur</div>
-          </div>
-        </a>
+        <link rel="stylesheet" href="/css/style.css">
 
-        <a href="images/works/7.png" class="work">
-          <img src="images/works/7.png" alt="">
-          <div class="info">
-            <h3>Mr. Elegance Award 2019</h3>
-            <div class="cat">Kota, Rajasthan</div>
-          </div>
-        </a>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <a href="images/works/9.png" class="work">
-          <img src="images/works/9.png" alt="">
-          <div class="info">
-            <h3>Best Participant Award 2017</h3>
-            <div class="cat">Vadodara Gujarat</div>
-          </div>
-        </a>
+        <title>Shrey Banugaria</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Shrey Banugaria</a>
+                </div>
 
-        
-        <h4 style="padding-top: 20px; margin-left: auto;">Click To view Photos</h4>
-      </div>
-    </div>
-  </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-  <section>
-    <div class="quote">
-      <h2>"It is our choices, far more than our abilities that makes us who we are."</h2>
-      <h4>-Albus Dumbledore</h4>
-    </div>
-  </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="inner-width">
-      <h1 class="section-title">Get in touch</h1>
-      <div class="contact-info">
-        <div class="item">
-          <i class="fas fa-mobile-alt"></i>
-          +91 9664840121
-        </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I am <br><span class="home__title-color">Shrey Banugaria</span><br>I build Web Apps</h1>
 
-        <div class="item">
-          <i class="fas fa-envelope"></i>
-          shreybanugariya@gmail.com
-        </div>
+                    <a href="#contact" class="button">Contact</a>
+                    
+                </div>
 
-        <div class="item">
-          <i class="fas fa-map-marker-alt"></i>
-          Ahmedabad, India
-        </div>
-      </div>
+                <div class="home__social">
+                  <a href="Shrey's Resume.pdf" class="button">Resume</a> 
+                </div>
 
-      <form action="https://formspree.io/mjvaqwqq" class="contact-form" method="POST">
-        <input type="text" name="name"class="nameZone" placeholder="Your Full Name">
-        <input type="email" name="email"class="emailZone" placeholder="Your Email">
-        <input type="text" name="subject"class="subjectZone" placeholder="Subject">
-        <textarea class="messageZone" name="message" placeholder="Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </form>
-    </div>
-  </section>
+                <div class="home__img">    
+                    <img src="/img/Profile_Shrey_small.jpg" alt="">
+                </div>
+            </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="inner-width">
-      <div class="copyright">
-        &copy; 2020 | Created & Designed By <a href="#">Shrey Banugaria</a>
-      </div>
-      <div class="sm">
-        <a href="https://github.com/Shreybanugariya" class="fab fa-github"></a>
-        <a href="https://www.linkedin.com/in/shrey-banugaria/" class="fab fa-linkedin-in"></a>
-        <a href="https://twitter.com/BanugariyaShrey" class="fab fa-twitter"></a>
-        <a href="https://www.instagram.com/shreybanugaria/?hl=en" class="fab fa-instagram"></a>          
-        <a href="https://www.facebook.com/shrey.banugariya" class="fab fa-facebook-f"></a>
-      </div>
-    </div>
-  </footer>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-  <!-- Go Top BTN -->
-  <button class="goTop fas fa-arrow-up"></button>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/img/Profile_Shrey.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I am Shrey Banugaria</h2>
+                        <p class="about__text">I am currently a final year student of Computer Engineering @ Gandhinagar Institute of Technology, Gujarat.</p><br>
+                        <p class="about__text">With the quest to make this world a beautiful place to live in, I want to learn things that make other things possible and that lead me to learn about developemnt and, I am completely enjoying my journey in this logical world of binary.</p><br>
+                        <p class="about__text">My ambition is to learn new things and make myself available for everything.</p><br>
+                        
+                        <a href="Shrey's Resume.pdf" class="button">Resume</a> 
+                    </div>  
+                                                    
+                </div>
+            </section>
+             <!-- =====Experience===== -->
+             <h2 class="section-title">Experience</h2>
+             <section class="experience section" id="about">
+               
+ 
+               <div class="about__container bd-grid">
+                 <div>
+                   <p class="exp_content_title"> Intern @ Fowex Ventures Pvt Ltd.</p>
+                     <p class="exp_content"><i class='bx bxs-log-in-circle'  style="font-size: 1rem;"></i> Working as a Full Stack Web Developer</p>
+                     <p class="exp_content"><i class='bx bxs-log-in-circle'  style="font-size: 1rem;"></i> Building their main website along with an e-commerce website for the company.</p>
+                             
+               </div> 
+ 
+                   <div class="about__img">
+                   </div>                              
+               </div>
+           </section>
 
-</body>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <!-- <h2 class="skills__subtitle">Profesional Skills</h2> -->
+                <div class="skills__container bd-grid">          
+                    <div>            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                           
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Bootstrap</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>              
+                      <div class="skills__data">
+                        <div class="skills__names">
+                          <img src="img/python-logo-24.png" class="python_icon" alt="">
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                          <i class='bx bxl-nodejs skills__icon'></i>
+                            <span class="skills__name">Node JS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                          <i class='bx bx-code skills__icon' ></i>
+                            <span class="skills__name">Django</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-coin-stack skills__icon'></i>
+                            <span class="skills__name">MongoDb, SQL</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </section>
+           <div class="quote">
+             <h2 class="quote_h2">Its our Choices far more than our abilities that makes us who we are</h2>
+             <h3 class="quote_h3">-Albus Dumbledore</h3>
+           </div>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Sudoku_Solver_through-Backtracking" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                       <div class="work_title">Self Solving Sudoku</div>
+                       <div class="work_desc">A "Back-Tracking" alogrithm implemented in python solves Sudoku by itself. </div>
+                       <div class="work_caption">Python, Back-Tracking</div>
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Markdown-Blog-in-NodeJs" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">MarkDown Blog</div>
+                      <div class="work_desc">A Blog WebApp which allows user to create, read, delete and to edit them in markdown.</div>
+                      <div class="work_caption">Node Js, Express Js, MongoDb</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Restaurant_Booking_and_Waiting_System_in_Django" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Hotel Booking and Waiting App</div>
+                      <div class="work_desc">A Website that displays the waiting Queue, allows user to add wating and book a table.</div>
+                      <div class="work_caption">Django, JS, Bootstrap</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Startup Stem</div>
+                      <div class="work_desc">A Hackathon Project of DIPP for providing a platform for startups to find mentors.</div>
+                      <div class="work_caption">Flask, Js, Bootstrap</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Plotting-Cases-on-Indian-Map" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Plotting Covid Cases on Indian Map</div>
+                      <div class="work_desc">A site that scraps data from Gov. website and post the data on the map. It displays Recovered, Positive and Casualty cases</div>
+                      <div class="work_caption">Map-Box, Bootstrap, JS</div> 
+                    </div>
+                    <div class="work__img">
+                      <a href="https://github.com/Shreybanugariya/Hospital_Management_System_in_CSharp_C" class="work_social_icon"><i class='bx bxl-github' ></i></a>
+                      
+                      <div class="work_title">Hospital Managment System</div>
+                      <div class="work_desc">A Desktop application that perfrms CRUD operations and has a seperate inventory for the Hospital.</div>
+                      <div class="work_caption">C#, SQl</div> 
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <h2 class="section-title">Contact</h2>
+            <section class="contact section" id="contact">
+                
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                      <div class="footer__social">
+                        <a href="https://github.com/Shreybanugariya" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.facebook.com/shrey.banugariya" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://twitter.com/BanugariyaShrey" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                        <a href="tel:9664840121" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
+                        <a href="https://www.linkedin.com/in/shrey-banugaria/" class="footer__icon"><i class='bx bxl-linkedin-square'></i></a>
+                        
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            
+           
+            <p class="footer__title">&#169; Shrey Banugaria</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="/js/index.js"></script>
+    </body>
 </html>
