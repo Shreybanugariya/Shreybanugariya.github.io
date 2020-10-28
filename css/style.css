@@ -370,7 +370,7 @@ img{
   color: #f1f1f1;
   font-size: 0.9rem !important;
   padding: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom:0.2rem;
   text-align: center;
 }
 
