@@ -361,15 +361,13 @@ img{
 
 }
 .quote_h2{
-  color: #f1f1f1;
-  font-size: 1rem !important;
+  color: #f1f1f1; 
   padding: 1rem;
   padding-top: 2rem;
   text-align: center;
 }
 .quote_h3{
   color: #f1f1f1;
-  font-size: 0.9rem !important;
   padding: 1rem;
   padding-bottom: 0.5rem;
   text-align: center;
