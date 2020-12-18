@@ -32,25 +32,39 @@ const sr = ScrollReveal({
   duration: 2000,
   reset: true
 });
+/*Nav SCROLL*/
+
+
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
-sr.reveal('.button',{delay: 50}); 
-sr.reveal('.home__img',{delay: 50}); 
-sr.reveal('.home__social-icon',{ interval: 50}); 
+sr.reveal('.button',{interval: 40}); 
+sr.reveal('.home__img',{delay: 40}); 
+sr.reveal('.home__social-icon',{ interval: 10}); 
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{delay: 50}); 
-sr.reveal('.about__text',{delay: 50}); 
+sr.reveal('.about__subtitle',{delay: 10}); 
+sr.reveal('.about__text',{delay: 10}); 
 
 /*SCROLL SKILLS*/
-
+sr.reveal('.skills__subtitle',{}); 
+sr.reveal('.skills__text',{}); 
+sr.reveal('.skills__data',{interval: 10}); 
+sr.reveal('.skills__img',{delay: 10});
 
 /*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 50}); 
+sr.reveal('.work__img',{delay: 50}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 50}); 
+
+/*SCROLL EXPERIENCE*/
+sr.reveal('.exp_content_title',{interval: 50});
+sr.reveal('.exp_content',{interval: 50});
+sr.reveal('.exp_icon', {interval: 50});
+
+/* Footer*/ 
+sr.reveal('.footer__title', {interval:50})
 
 
