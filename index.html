@@ -1,624 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Shrey Banugaria - Sr. Nodejs Developer</title>
-    <meta charset="utf-8">
+<head>
+  <title>SHREY_BANUGARIA :: AI Systems Engineer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Shrey Banugaria — Team Lead &amp; AI Systems Engineer specializing in RAG Pipelines, LLM Applications, Distributed Systems, Node.js, and Cloud Architecture.">
+  <meta name="keywords" content="AI Systems Engineer, RAG, LLM Applications, Backend Developer, Node.js, Distributed Systems, Shrey Banugaria, Team Lead, GraphQL, AWS, Kubernetes, Docker">
+  <meta name="author" content="Shrey Banugaria">
+  <meta property="og:title" content="Shrey Banugaria :: AI Systems Engineer">
+  <meta property="og:description" content="Team Lead | Backend &amp; AI Systems Engineer | RAG • LLM Applications • Distributed Systems | Node.js • Cloud">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shreybanugariya.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shrey Banugaria :: AI Systems Engineer">
 
-	<!-- Meta description for SEO -->
-    <meta name="description" content="An experienced Node.js Developer specializing in backend applications, third-party integrations, payment gateways, and more.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shrey Banugaria",
+    "url": "https://shreybanugariya.github.io/",
+    "jobTitle": "Team Lead & AI Systems Engineer",
+    "description": "Team Lead specializing in RAG, LLM Applications, Distributed Systems, Node.js, AWS, GCP, Docker, Kubernetes.",
+    "sameAs": [
+      "https://www.linkedin.com/in/shrey-banugaria/",
+      "https://github.com/shreybanugariya",
+      "https://medium.com/@shreybanugaria"
+    ]
+  }
+  </script>
 
-    <!-- Meta keywords for SEO -->
-    <meta name="keywords" content="Node.js Developer, Backend Developer, API Integration, Payment Gateway, Shrey Banugaria, Web Development, Software Engineer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#00ff41">
 
-	<!-- Author meta tag -->
-	<meta name="author" content="Shrey Banugaria">
+  <!-- Terminal Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
 
-	<!-- Open Graph tags for social media -->
-    <meta property="og:title" content="Shrey Banugaria - Sr. Node.js Developer">
-    <meta property="og:description" content="An experienced Node.js Developer specializing in backend applications, third-party integrations, payment gateways, and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shreybanugariya.github.io/">
-    <meta property="og:image" content="https://github.com/Shreybanugariya/Shreybanugariya.github.io/blob/master/images/Shrey_bg1.png">
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="css/aos.css">
 
-	<!-- Twitter Card tags for social media -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Shrey Banugaria - Sr. Node.js Developer">
-	<meta name="twitter:description" content="An experienced Node.js Developer specializing in backend applications, third-party integrations, payment gateways, and more.">
-	<meta name="twitter:image" content="https://github.com/Shreybanugariya/Shreybanugariya.github.io/blob/master/images/Shrey_bg1.png">
+  <!-- Terminal Theme -->
+  <link rel="stylesheet" href="css/style.css">
 
-	    <!-- Structured Data for better SEO -->
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org",
-			  "@type": "Person",
-			  "name": "Shrey Banugaria",
-			  "url": "https://shreybanugariya.github.io/",
-			  "image": "https://github.com/Shreybanugariya/Shreybanugariya.github.io/blob/master/images/Shrey_bg1.png",
-			  "jobTitle": "Sr. Node.js Developer",
-			  "description": "An experienced Node.js Developer specializing in backend applications, third-party integrations, payment gateways, and more.",
-			  "sameAs": [
-				"https://www.linkedin.com/in/shrey-banugaria/",
-				"https://github.com/shreybanugariya"
-			  ]
-			}
-			</script>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
 
+<body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<!-- Scanlines overlay -->
+<div class="scanlines"></div>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Matrix rain background -->
+<canvas id="matrix-canvas"></canvas>
 
-    <link rel="stylesheet" href="css/aos.css">
+<!-- =========================================
+     NAVIGATION
+     ========================================= -->
+<nav class="terminal-nav" id="main-nav">
+  <div class="nav-container">
+    <a class="nav-brand" href="#home-section">
+      <span class="prompt">shrey@portfolio</span><span style="color:var(--text-dim)">:</span><span class="path">~</span><span style="color:var(--text-dim)">$</span>
+      <span class="cursor-blink" style="font-size:16px; margin-left:4px">█</span>
+    </a>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">[MENU]</button>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="https://www.linkedin.com/in/shrey-banugaria/">Shrey</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+    <div class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#home-section"><span class="cmd-prefix">./</span>home</a></li>
+        <li><a href="#about-section"><span class="cmd-prefix">./</span>about</a></li>
+        <li><a href="#resume-section"><span class="cmd-prefix">./</span>experience</a></li>
+        <li><a href="#skills-section"><span class="cmd-prefix">./</span>skills</a></li>
+        <li><a href="#projects-section-featured"><span class="cmd-prefix">./</span>projects</a></li>
+        <li><a href="#projects-section"><span class="cmd-prefix">./</span>certs</a></li>
+        <li><a href="#blog-section"><span class="cmd-prefix">./</span>blogs</a></li>
+        <li><a href="#contact-section"><span class="cmd-prefix">./</span>contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Certificates</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blogs</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	</nav>
-	
-	<section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-		          <div class="three-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '120000000%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Shrey Banugaria</span></h1>
-			            <h2 class="mb-4">A Backend Nodejs Developer</h2>
-			            <p><a href="https://www.linkedin.com/in/shrey-banugaria/" class="btn btn-primary py-3 px-4 mr-3">Hire Me</a> <a href="./ShreyBanugaria_Software_Developer.pdf" class="btn btn-white btn-outline-white py-3 px-4">Resume</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
+<!-- =========================================
+     HERO / HOME SECTION
+     ========================================= -->
+<section id="home-section">
+  <div class="container">
+    <div class="hero-wrapper">
+      <div class="terminal-window">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">terminal — shrey@portfolio — zsh — 140×40</span>
+        </div>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-12">
-    				<div class="row justify-content-center pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p>3+ Years of Experience in bulidng Backned Applications in Nodejs. Apart from Coding I like to Narrate Stories and Talk about Philosophy, Movies and Books</p>
-					<br>
-					<p>Worked as a Backend Developer from the Begning and thus you can see, still learning to center a div</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Shrey Banugaria</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>June 06, 1999</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>Ahmedabad India</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>shreybanugaria10@gmail.com</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+91 9664840121</span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-              	<p class="mb-4">
-	                <span class="number" data-number="13">1</span>
-	                <span>Projects Worked On</span>
-                </p>
-                <p><a href="ShreyBanugaria_Software_Developer.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt-text">shrey@portfolio:~$</span>
+            <span class="cmd-text"> ./init_portfolio.sh --mode ai-engineer</span>
+          </div>
+
+          <div class="terminal-line" style="color:var(--text-dim); margin: 8px 0 0">
+            [INFO] Loading AI Systems Engineer profile...
+          </div>
+          <div class="terminal-line" style="color:var(--text-dim); margin-bottom:16px">
+            [OK] Profile loaded. Rendering output...
+          </div>
+
+          <div class="hero-name-block">
+            <div class="hero-name pulse-glow">SHREY BANUGARIA</div>
+            <div class="hero-sub">Team Lead &nbsp;|&nbsp; Backend &amp; AI Systems Engineer</div>
+          </div>
+
+          <div class="hero-info-block">
+            <div class="info-row">
+              <span class="info-key">SPEC</span>
+              <span class="info-sep">:</span>
+              <span class="info-val">Distributed Systems &nbsp;•&nbsp; RAG Pipelines &nbsp;•&nbsp; LLM Applications</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">STACK</span>
+              <span class="info-sep">:</span>
+              <span class="info-val">Node.js &nbsp;•&nbsp; AWS &nbsp;•&nbsp; GCP &nbsp;•&nbsp; Docker &nbsp;•&nbsp; Kubernetes &nbsp;•&nbsp; GraphQL</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">EXP</span>
+              <span class="info-sep">:</span>
+              <span class="info-val">5+ Years &nbsp;&nbsp;|&nbsp;&nbsp; GraphQL Certified &nbsp;&nbsp;|&nbsp;&nbsp; CGPA 9.44</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">STATUS</span>
+              <span class="info-sep">:</span>
+              <span class="info-val online">▶ [ONLINE] Available for AI Systems Engineering roles</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://www.linkedin.com/in/shrey-banugaria/" target="_blank" class="btn-terminal">
+              <span class="btn-prefix">$</span> connect --linkedin
+            </a>
+            <a href="./ShreyBanugaria_Backend_Developer.pdf" target="_blank" class="btn-terminal btn-outline">
+              <span class="btn-prefix">$</span> wget resume.pdf
+            </a>
+          </div>
+
+          <div class="hero-prompt">
+            <span class="prompt-text">shrey@portfolio:~$</span>
+            <span class="cursor-blink">█</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     ABOUT SECTION
+     ========================================= -->
+<section class="section" id="about-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ cat about.json</span>
+    </div>
+
+    <div class="terminal-window" data-aos="fade-up">
+      <div class="terminal-chrome">
+        <div class="chrome-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="chrome-title">about.json</span>
+      </div>
+      <div class="terminal-body">
+        <pre class="json-content">{
+  <span class="json-key">"name"</span>:             <span class="json-str">"Shrey Banugaria"</span>,
+  <span class="json-key">"dob"</span>:              <span class="json-str">"June 06, 1999"</span>,
+  <span class="json-key">"location"</span>:         <span class="json-str">"Ahmedabad, Gujarat, India"</span>,
+  <span class="json-key">"email"</span>:            <span class="json-str">"shreybanugaria10@gmail.com"</span>,
+  <span class="json-key">"phone"</span>:            <span class="json-str">"+91 9664840121"</span>,
+  <span class="json-key">"role"</span>:             <span class="json-str">"Team Lead | Backend &amp; AI Systems Engineer"</span>,
+  <span class="json-key">"experience_years"</span>: <span class="json-num">5</span>,
+  <span class="json-key">"education"</span>: {
+    <span class="json-key">"degree"</span>:         <span class="json-str">"B.E. Computer Science"</span>,
+    <span class="json-key">"institution"</span>:   <span class="json-str">"Gandhinagar Institute of Technology"</span>,
+    <span class="json-key">"cgpa"</span>:           <span class="json-num">9.44</span>
+  },
+  <span class="json-key">"current_focus"</span>:    <span class="json-str">"RAG Pipelines, LLM Applications, AI Systems Engineering"</span>,
+  <span class="json-key">"summary"</span>:          <span class="json-str">"GraphQL-Certified Team Lead &amp; Senior Backend Engineer. 5+ years designing cloud-native microservices. Recently built a RAG pipeline system. Moving towards AI Systems Engineering."</span>,
+  <span class="json-key">"interests"</span>: [
+    <span class="json-str">"Reading Non-Fiction"</span>,
+    <span class="json-str">"Watching Movies"</span>,
+    <span class="json-str">"Writing &amp; Storytelling"</span>,
+    <span class="json-str">"Public Speaking"</span>
+  ]
+}</pre>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card" data-aos="fade-up">
+        <span class="stat-num">5+</span>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="80">
+        <span class="stat-num">15+</span>
+        <div class="stat-label">Projects Shipped</div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="160">
+        <span class="stat-num">2</span>
+        <div class="stat-label">Cloud Platforms</div>
+      </div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="240">
+        <span class="stat-num">5+</span>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     EXPERIENCE / RESUME SECTION
+     ========================================= -->
+<section class="section" id="resume-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ git log --format="%h %s [%ai]" --all</span>
+    </div>
+
+    <div class="git-log">
+
+      <!-- Qodic Technosoft -->
+      <div class="git-entry" data-aos="fade-up">
+        <div class="git-hash">a1b2c3d</div>
+        <div class="git-meta">
+          <span class="git-branch current">[HEAD → main]</span>
+          <span class="git-date">March 2025 — Present</span>
+        </div>
+        <div class="git-commit-msg">Team Lead (Backend) @ Qodic Technosoft</div>
+        <div class="git-body">
+          <div class="terminal-window">
+            <div class="terminal-chrome">
+              <div class="chrome-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
               </div>
-	          </div>
-	        </div>
-        </div>
-    	</div>
-    </section> 
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>“Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?” - Albus Dumbledore</p>
+              <span class="chrome-title">qodic_technosoft.log</span>
+            </div>
+            <div class="terminal-body">
+              <ul class="exp-list">
+                <li>Leading backend across 5+ projects using <span class="tech-tag">Node.js</span> microservices, <span class="tech-tag">Docker</span>, and <span class="tech-tag">Kubernetes</span></li>
+                <li>Architected and scaled microservices — resolved memory constraints &amp; high-load issues via <span class="tech-tag">AWS ALB</span></li>
+                <li>Designed a high-throughput <span class="tech-tag">IMS</span> with rollback handling, race-condition control &amp; large-scale reporting</li>
+                <li>Optimised a Chrome Extension backend — reduced API response time by <span class="highlight">40%+</span></li>
+                <li>Integrated enterprise add-ons: <span class="tech-tag">Paxton</span> <span class="tech-tag">Noke</span> <span class="tech-tag">Xero</span> <span class="tech-tag">BrightLocal SEO</span> <span class="tech-tag">Storologix PTI</span> <span class="tech-tag">LockVue</span></li>
+                <li>Sprint planning, PR reviews, and technical oversight for delivery velocity</li>
+              </ul>
+            </div>
           </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-12">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2024-Present</span>
-    					<h2>Ninja Tech</h2>
-    					<span class="position">Sr. Software Developer</span>
-    					<p class="mt-4">Worked on projects on Community Builing Platform, Real Estate, Video Streaming and E-Learning, Managing Deployment, Project Planning and DB Design</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2021-2023</span>
-    					<h2>Yudiz Solutions</h2>
-    					<span class="position">Jr. Nodejs Developer</span>
-    					<p class="mt-4">Worked with Fashion Startup as a Dedicated Developer, Projects on Sports Fantasy, Live Mobile Games, E-Learning, E-Commerce </p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2021</span>
-    					<h2>Fovex Ventrues</h2>
-    					<span class="position">Full Stack Developer</span>
-    					<p class="mt-4">Created E-Commerce website for a Startup</p>
-    				</div>
-					<div class="resume-wrap ftco-animate">
-    					<span class="date">2019-2021</span>
-    					<h2>Freelance</h2>
-    					<span class="position">Tech Content Writter and Copy Writter</span>
-    					<p class="mt-4">Served as a Content Writer, Copy Writer, and Editor for International Business</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="ShreyBanugaria_Software_Developer.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <!-- <section class="ftco-section" id="services-section">
-    	<div class="container">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Services</h1>
-            <h2 class="mb-4">Services</h2>
-            <p>Grass is Greener Where you water it</p>
-          </div>
-        </div>
-    		<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-web-design"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Design and Development</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-							</span>
-							<div class="desc">
-								<h3 class="text-center">Re-Build in Nodejs / Cloud Migration</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-							</span>
-							<div class="desc">
-								<h3 class="text-center">Content and Copy Writing</h3>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-analysis"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Market Analysis for your Startup</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-flasks"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Branding and Social Media Management</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Marketing and Advertizing</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-    	</div>
-    </section> -->
-
-	<section class="ftco-section" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-		<div class="col-md-12 heading-section text-center ftco-animate">
-		<h1 class="big big-2">Skills</h1>
-		<h2 class="mb-4">My Skills</h2>
-		<p>“The Future Belongs to those who learn more skills and combine them in creative ways" - Robert Greene</p>
-		</div>
-	</div>
-			<div class="row">
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Nodejs.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/ExpressJs.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Nestjs.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/MongoDB.png"></img>
-
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/MySQL.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/PostgreSQL.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Ec2.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/BeanStalk.jpg"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Lambda.jpg"></img>
-
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/AWS_SAM.jpg"></img>
-
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/S3Bucket.png"></img>
-
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Redis.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/GraphQL.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Stripe.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Razorpay.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Algolia.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Sentry.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Firebase.jpg"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Socketio.png"></img>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<img style="border-radius: 10%;" src="./images/Sendgrid.png"></img>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
- 
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Certs</h1>
-            <h2 class="mb-4">Certificates</h2>
-            <p></p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/GraphQL_Developer_Associate.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://www.apollographql.com/tutorials/certifications/91be5530-17a2-43e1-9a1f-b848e30bb5ca">Graph Developer - Associate</a></h3>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-6">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/GraphQL_Developer_Professional.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://www.apollographql.com/tutorials/certifications/cc862987-bfea-488e-bbb2-915f19f9aaea">Graph Developer - Professional</a></h3>
-	    				</div>
-    				</div>
-  				</div>
-				  <div class="col-md-6">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/HackerRankJS.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://www.hackerrank.com/certificates/2c39ddcb329e">Hacker Rank Javascript</a></h3>
-	    				</div>
-    				</div>
-  				</div>
-				  <div class="col-md-6">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/11_Javascript_Critical.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://www.udemy.com/certificate/UC-66add1f7-5be6-44d0-b005-99a81b1ccd10/">JS Critical Feature</a></h3>
-	    				</div>
-    				</div>
-  				</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">My Blogs</h2>
-            <p>Good Content is not Storytellig. It's telling your story well. </p>
-          </div>
-        </div>
-        <div class="row d-flex">
-		<div class="col-md-6 d-flex ftco-animate">
-		<div class="blog-entry justify-content-end">
-			<a href="https://medium.com/infiq-technologies/deploy-to-aws-lambda-using-aws-sam-sam-cli-and-sam-templates-88e5f6f1e62c" class="block-20" style="background-image: url('images/Deploy_to_AWS_Lambda.webp');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			<div class="d-flex align-items-center mb-3 meta">
-				<p class="mb-0">
-					<span class="mr-2">Medium.com</span>
-				</p>
-			</div>
-			<h3 class="heading"><a href="https://medium.com/infiq-technologies/deploy-to-aws-lambda-using-aws-sam-sam-cli-and-sam-templates-88e5f6f1e62c">Deploy to AWS Lambda using AWS SAM, SAM CLI and SAM Templates</p>
-			</div>
-		</div>
-			</div>
-			<div class="col-md-6 d-flex ftco-animate">
-			<div class="blog-entry justify-content-end">
-				<a href="https://medium.com/infiq-technologies/how-to-deploy-nodejs-app-on-aws-ec2-instance-0634c54259a5" class="block-20" style="background-image: url('images/EC2_Instance.webp');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				<div class="d-flex align-items-center mb-3 meta">
-					<p class="mb-0">
-						<span class="mr-2">Medium.com</span>
-					</p>
-				</div>
-				<h3 class="heading"><a href="https://medium.com/infiq-technologies/how-to-deploy-nodejs-app-on-aws-ec2-instance-0634c54259a5">How to Deploy Nodejs App on AWS: EC2 Instance</a></h3>
-				</div>
-			</div>
-			</div>
-			<div class="col-md-6 d-flex ftco-animate">
-				<div class="blog-entry">
-				<a href="https://medium.com/@shreybanugaria/javascript-interview-questions-kit-fae34dc7ced6" class="block-20" style="background-image: url('images/Javscript_Interview_Preparation_Guide.webp');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-					<div class="d-flex align-items-center mb-3 meta">
-					<p class="mb-0">
-						<span class="mr-2">June 21, 2019</span>
-					</p>
-				</div>
-				<h3 class="heading"><a href="https://medium.com/@shreybanugaria/javascript-interview-questions-kit-fae34dc7ced6">Javascript Interview Preparation Guide. All you need to know.</a></h3>
-				</div>
-			</div>
-			</div>
-			<div class="col-md-6 d-flex ftco-animate">
-				<div class="blog-entry">
-				<a href="https://blog.yudiz.com/a-billion-dollar-math-problem-reversal-of-sha-256/" class="block-20" style="background-image: url('images/A_billiion_dollar_math_probel.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-					<div class="d-flex align-items-center mb-3 meta">
-					  <p class="mb-0">
-						  <span class="mr-2">June 21, 2019</span>
-					  </p>
-				  </div>
-				  <h3 class="heading"><a href="https://blog.yudiz.com/a-billion-dollar-math-problem-reversal-of-sha-256/">A Billion-Dollar Math Problem: Reversal of SHA-256
-				</a></h3>
-				  
-				</div>
-			  </div>
-			</div>
-
-			<div class="col-md-12 ftco-animate">
-				<div class="text mt-3 float-center d-block">
-					<h3 class="heading"><a href="hhttps://medium.com/@shreybanugaria">Visit medium/@shreybanugaria for More...</a></h3>
-				</div>
-			</div>
-			
         </div>
       </div>
-    </section>
 
-    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/Freelancing.jpg)">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>I'm <span>Available for online Business Requirements</span></h2> </h2>
-						<p class="mb-0"><a href="https://www.linkedin.com/in/shrey-banugaria/" class="btn btn-primary py-3 px-5">Lets connect</a></p>
-					</div>
-				</div>
-			</div>
-	</section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Networking is the best Investment</p>
+      <!-- Ninja Tech -->
+      <div class="git-entry" data-aos="fade-up">
+        <div class="git-hash">e4f5g6h</div>
+        <div class="git-meta">
+          <span class="git-branch">feature/genai-backend</span>
+          <span class="git-date">Jan 2024 — March 2025</span>
+        </div>
+        <div class="git-commit-msg">Senior Software Developer &amp; Team Lead @ Ninja Tech</div>
+        <div class="git-body">
+          <div class="terminal-window">
+            <div class="terminal-chrome">
+              <div class="chrome-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="chrome-title">ninja_tech.log</span>
+            </div>
+            <div class="terminal-body">
+              <ul class="exp-list">
+                <li>Migrated <span class="tech-tag">MongoDB</span> → <span class="tech-tag">AWS DocumentDB</span> — <span class="highlight">~20% API performance gain</span></li>
+                <li>Led backend for a GenAI startup: <span class="tech-tag">AWS → GCP</span> migration, <span class="tech-tag">MongoDB Sharding</span>, <span class="tech-tag">GraphQL</span> optimisation, <span class="tech-tag">Kafka → Redis Pub/Sub</span></li>
+                <li>Built AWS-heavy systems: <span class="tech-tag">EKS</span> <span class="tech-tag">ECR</span> <span class="tech-tag">RDS (PostgreSQL)</span> <span class="tech-tag">ElasticCache</span> <span class="tech-tag">SQS</span> <span class="tech-tag">EventBridge</span> <span class="tech-tag">Lambda</span></li>
+                <li>Built scalable Real Estate CMS with multi-role <span class="tech-tag">RBAC</span> &amp; dynamic permissions</li>
+                <li>Optimised <span class="tech-tag">BUN</span>-based services: <span class="tech-tag">Algolia</span> <span class="tech-tag">Firebase</span> <span class="tech-tag">Apple Login</span></li>
+                <li>Mentored junior engineers &amp; conducted Node.js technical interviews</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Ahmedabad, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+91 9664840121</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">shreybanugaria10@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Linkedin</h3>
-	            <p><a href="#">@shrey-banugaria</a></p>
-	          </div>
+      <!-- Yudiz Solutions -->
+      <div class="git-entry" data-aos="fade-up">
+        <div class="git-hash">i7j8k9l</div>
+        <div class="git-meta">
+          <span class="git-branch">feature/gaming-platform</span>
+          <span class="git-date">May 2021 — Dec 2023</span>
+        </div>
+        <div class="git-commit-msg">Jr. Web Developer @ Yudiz Solutions Ltd.</div>
+        <div class="git-body">
+          <div class="terminal-window">
+            <div class="terminal-chrome">
+              <div class="chrome-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="chrome-title">yudiz_solutions.log</span>
+            </div>
+            <div class="terminal-body">
+              <ul class="exp-list">
+                <li>Built data-intensive microservices for a fantasy gaming platform with real-time transactions &amp; payment workflows</li>
+                <li>Designed LLDs, workflows, and test cases for scalable white-label backend systems</li>
+                <li>Integrated: <span class="tech-tag">Stripe</span> <span class="tech-tag">Algolia</span> <span class="tech-tag">Firebase</span> <span class="tech-tag">New Relic</span> <span class="tech-tag">DigitalOcean Spaces</span> <span class="tech-tag">Facebook RSS</span></li>
+                <li>Real-time &amp; async processing: <span class="tech-tag">Socket.IO</span> <span class="tech-tag">Redis Queue</span> <span class="tech-tag">Redis Pub/Sub</span></li>
+                <li>Long-term international client collaboration</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="row no-gutters block-9 mb-5">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="https://formspree.io/f/xrgnrrab" method="POST" class="bg-light p-4 p-md-5 contact-form">
-				<div class="form-group">
-				<input type="text" name="name" class="form-control" placeholder="Your Name" required>
-				</div>
-				<div class="form-group">
-				<input type="text" name="email" class="form-control" placeholder="Email" required>
-				</div>
-				<div class="form-group">
-					<input type="text" name="contact" class="form-control" placeholder="Contact" required>
-				</div>
-				<div class="form-group">
-					<input type="text" name="subject" class="form-control" placeholder="Subject" required>
-				</div>
-				<div class="form-group">
-				<textarea name="" id=""  name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-				</div>
-				<div class="form-group">
-				<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-				</div>
+      <!-- Internship -->
+      <div class="git-entry" data-aos="fade-up">
+        <div class="git-hash">m0n1o2p</div>
+        <div class="git-meta">
+          <span class="git-branch">init/internship</span>
+          <span class="git-date">Feb 2021 — Apr 2021</span>
+        </div>
+        <div class="git-commit-msg">Node.js Intern @ Yudiz Solutions Ltd.</div>
+        <div class="git-body">
+          <div class="terminal-window">
+            <div class="terminal-chrome">
+              <div class="chrome-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="chrome-title">init_internship.log</span>
+            </div>
+            <div class="terminal-body">
+              <ul class="exp-list">
+                <li>Learnt &amp; practised: <span class="tech-tag">Node.js</span> <span class="tech-tag">Express.js</span> <span class="tech-tag">MongoDB</span> <span class="tech-tag">MySQL</span> <span class="tech-tag">Redis</span> <span class="tech-tag">Socket.io</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /git-log -->
+
+    <div class="text-center mt-4">
+      <a href="./ShreyBanugaria_Backend_Developer.pdf" target="_blank" class="btn-terminal">
+        <span class="btn-prefix">$</span> wget full-resume.pdf
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SKILLS SECTION
+     ========================================= -->
+<section class="section" id="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ cat skills.conf | grep -v '#'</span>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- AI / ML -->
+      <div class="skill-category terminal-window" data-aos="fade-up">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">ai_ml.conf</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-cat-header">
+            <span class="cat-icon">▶</span> AI &amp; ML Systems
+            <span class="badge-new">NEW</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag ai">RAG Pipelines</span>
+            <span class="skill-tag ai">LLM Applications</span>
+            <span class="skill-tag ai">Vector Search</span>
+            <span class="skill-tag ai">Prompt Engineering</span>
+            <span class="skill-tag ai">GitHub Copilot</span>
+            <span class="skill-tag ai">Cursor AI</span>
+            <span class="skill-tag ai">OpenAI API</span>
+            <span class="skill-tag ai">Google Stitch</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-category terminal-window" data-aos="fade-up" data-aos-delay="60">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">backend.conf</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-cat-header"><span class="cat-icon">▶</span> Backend &amp; Frameworks</div>
+          <div class="skill-tags">
+            <span class="skill-tag backend">Node.js</span>
+            <span class="skill-tag backend">Express.js</span>
+            <span class="skill-tag backend">NestJS</span>
+            <span class="skill-tag backend">GraphQL ★</span>
+            <span class="skill-tag backend">REST APIs</span>
+            <span class="skill-tag backend">TypeScript</span>
+            <span class="skill-tag backend">Python</span>
+            <span class="skill-tag backend">BullMQ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-category terminal-window" data-aos="fade-up" data-aos-delay="120">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">databases.conf</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-cat-header"><span class="cat-icon">▶</span> Databases &amp; Caching</div>
+          <div class="skill-tags">
+            <span class="skill-tag db">MongoDB</span>
+            <span class="skill-tag db">PostgreSQL</span>
+            <span class="skill-tag db">MySQL</span>
+            <span class="skill-tag db">Redis</span>
+            <span class="skill-tag db">Elasticsearch</span>
+            <span class="skill-tag db">Algolia</span>
+            <span class="skill-tag db">AWS DocumentDB</span>
+            <span class="skill-tag db">Vector DB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & DevOps -->
+      <div class="skill-category terminal-window" data-aos="fade-up" data-aos-delay="60">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">cloud_devops.conf</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-cat-header"><span class="cat-icon">▶</span> Cloud &amp; DevOps</div>
+          <div class="skill-tags">
+            <span class="skill-tag cloud">AWS</span>
+            <span class="skill-tag cloud">GCP</span>
+            <span class="skill-tag cloud">Docker</span>
+            <span class="skill-tag cloud">Kubernetes</span>
+            <span class="skill-tag cloud">EC2 / EKS</span>
+            <span class="skill-tag cloud">Lambda / SAM</span>
+            <span class="skill-tag cloud">CloudFormation</span>
+            <span class="skill-tag cloud">SQS / EventBridge</span>
+            <span class="skill-tag cloud">DigitalOcean</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Integrations -->
+      <div class="skill-category terminal-window" data-aos="fade-up" data-aos-delay="120">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">integrations.conf</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-cat-header"><span class="cat-icon">▶</span> Integrations &amp; Payments</div>
+          <div class="skill-tags">
+            <span class="skill-tag int">Stripe</span>
+            <span class="skill-tag int">Adyen</span>
+            <span class="skill-tag int">Razorpay</span>
+            <span class="skill-tag int">Firebase</span>
+            <span class="skill-tag int">Socket.IO</span>
+            <span class="skill-tag int">SendGrid</span>
+            <span class="skill-tag int">Sentry</span>
+            <span class="skill-tag int">New Relic</span>
+            <span class="skill-tag int">Xero</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="skill-category terminal-window" data-aos="fade-up" data-aos-delay="180">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">leadership.conf</span>
+        </div>
+        <div class="terminal-body">
+          <div class="skill-cat-header"><span class="cat-icon">▶</span> Leadership &amp; Mgmt</div>
+          <div class="skill-tags">
+            <span class="skill-tag lead">Team Leadership</span>
+            <span class="skill-tag lead">SCRUM / Agile</span>
+            <span class="skill-tag lead">System Design</span>
+            <span class="skill-tag lead">Code Reviews</span>
+            <span class="skill-tag lead">Tech Interviews</span>
+            <span class="skill-tag lead">Mentoring</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     PROJECTS SECTION
+     ========================================= -->
+<section class="section" id="projects-section-featured">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ ls -la ./projects/ --sort=relevance</span>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- RAG Pipeline -->
+      <div class="project-card terminal-window" data-aos="fade-up">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">rag_pipeline/README.md</span>
+        </div>
+        <div class="terminal-body">
+          <span class="project-badge ai-badge">AI / RAG</span>
+          <h3 class="project-title">RAG Pipeline System</h3>
+          <p class="project-desc">Designed and built a Retrieval-Augmented Generation pipeline integrating LLMs with vector search for intelligent document Q&amp;A and context-aware AI responses at scale.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">Vector DB</span>
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">Elasticsearch</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMS System -->
+      <div class="project-card terminal-window" data-aos="fade-up" data-aos-delay="80">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">ims_system/README.md</span>
+        </div>
+        <div class="terminal-body">
+          <span class="project-badge">Distributed Systems</span>
+          <h3 class="project-title">High-Throughput IMS</h3>
+          <p class="project-desc">High-throughput Inventory Management System with rollback handling, race-condition control, large-scale reporting, and AWS ALB load management. Deployed on Kubernetes.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">AWS ALB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GenAI Startup -->
+      <div class="project-card terminal-window" data-aos="fade-up">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">genai_startup/README.md</span>
+        </div>
+        <div class="terminal-body">
+          <span class="project-badge ai-badge">GenAI</span>
+          <h3 class="project-title">GenAI Startup Backend</h3>
+          <p class="project-desc">Led backend for a Generative AI startup — complete AWS → GCP cloud migration, MongoDB sharding, GraphQL query optimisation, Kafka → Redis Pub/Sub replacement.</p>
+          <div class="project-tech">
+            <span class="tech-tag">GCP</span>
+            <span class="tech-tag">GraphQL</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">NestJS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fantasy Gaming Platform -->
+      <div class="project-card terminal-window" data-aos="fade-up" data-aos-delay="80">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">fantasy_gaming/README.md</span>
+        </div>
+        <div class="terminal-body">
+          <span class="project-badge real-time">Real-time Systems</span>
+          <h3 class="project-title">Fantasy Gaming Platform</h3>
+          <p class="project-desc">Data-intensive microservices for a fantasy gaming platform handling real-time transactions, live leaderboards, and high-concurrency payment workflows at scale.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Socket.IO</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Stripe</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     CERTIFICATES SECTION
+     ========================================= -->
+<section class="section" id="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ ls ~/certificates/ &amp;&amp; cat ~/achievements.txt</span>
+    </div>
+
+    <div class="certs-grid">
+
+      <a href="https://www.apollographql.com/tutorials/certifications/cc862987-bfea-488e-bbb2-915f19f9aaea"
+         target="_blank" class="cert-card terminal-window" data-aos="fade-up">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">graphql_professional.cert</span>
+        </div>
+        <div class="cert-img" style="background-image: url(images/GraphQL_Developer_Professional.png)"></div>
+        <div class="cert-info">
+          <div class="cert-issuer">Apollo GraphQL</div>
+          <div class="cert-name">Graph Developer — Professional</div>
+        </div>
+      </a>
+
+      <a href="https://www.apollographql.com/tutorials/certifications/91be5530-17a2-43e1-9a1f-b848e30bb5ca"
+         target="_blank" class="cert-card terminal-window" data-aos="fade-up" data-aos-delay="80">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">graphql_associate.cert</span>
+        </div>
+        <div class="cert-img" style="background-image: url(images/GraphQL_Developer_Associate.png)"></div>
+        <div class="cert-info">
+          <div class="cert-issuer">Apollo GraphQL</div>
+          <div class="cert-name">Graph Developer — Associate</div>
+        </div>
+      </a>
+
+      <a href="https://www.hackerrank.com/certificates/2c39ddcb329e"
+         target="_blank" class="cert-card terminal-window" data-aos="fade-up" data-aos-delay="160">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">hackerrank_js.cert</span>
+        </div>
+        <div class="cert-img" style="background-image: url(images/HackerRankJS.png)"></div>
+        <div class="cert-info">
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-name">JavaScript Basics</div>
+        </div>
+      </a>
+
+      <a href="https://www.udemy.com/certificate/UC-66add1f7-5be6-44d0-b005-99a81b1ccd10/"
+         target="_blank" class="cert-card terminal-window" data-aos="fade-up" data-aos-delay="240">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">js_critical_features.cert</span>
+        </div>
+        <div class="cert-img" style="background-image: url(images/11_Javascript_Critical.jpg)"></div>
+        <div class="cert-info">
+          <div class="cert-issuer">Udemy</div>
+          <div class="cert-name">JS Critical Features</div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Awards -->
+    <div class="section-header mt-5">
+      <span class="section-cmd">$ cat achievements.txt</span>
+    </div>
+
+    <div class="terminal-window" data-aos="fade-up">
+      <div class="terminal-chrome">
+        <div class="chrome-dots">
+          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        </div>
+        <span class="chrome-title">achievements.txt</span>
+      </div>
+      <div class="terminal-body">
+        <div class="award-item">
+          <span class="award-icon">🏆</span>
+          <div>
+            <div class="award-title">1st Prize — Smart India Hackathon</div>
+            <div class="award-meta">MHRD, MIC, AICTE, PERSISTENT &nbsp;•&nbsp; IIT Kanpur, 2019</div>
+          </div>
+        </div>
+        <div class="award-item">
+          <span class="award-icon">🎖️</span>
+          <div>
+            <div class="award-title">Mr. Elegance Award</div>
+            <div class="award-meta">Best communication &amp; personality — JCI India Youth Summit, Kota, April 2019</div>
+          </div>
+        </div>
+        <div class="award-item">
+          <span class="award-icon">⭐</span>
+          <div>
+            <div class="award-title">Best Participant Award</div>
+            <div class="award-meta">Innovative ideas in GDs &amp; Debates — JASMINE Leadership Program, JCI India, Vadodara, June 2017</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================
+     BLOG SECTION
+     ========================================= -->
+<section class="section" id="blog-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ curl https://medium.com/@shreybanugaria/feed | jq '.posts[]'</span>
+    </div>
+
+    <div class="blogs-grid">
+
+      <a href="https://medium.com/infiq-technologies/deploy-to-aws-lambda-using-aws-sam-sam-cli-and-sam-templates-88e5f6f1e62c"
+         target="_blank" class="blog-card terminal-window" data-aos="fade-up">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">post_001.md</span>
+        </div>
+        <div class="blog-img" style="background-image: url('images/Deploy_to_AWS_Lambda.webp')"></div>
+        <div class="blog-content">
+          <div class="blog-platform">medium.com &nbsp;·&nbsp; Infiq Technologies</div>
+          <h3 class="blog-title">Deploy to AWS Lambda using AWS SAM, SAM CLI and SAM Templates</h3>
+          <div class="blog-tags">
+            <span class="tech-tag">AWS</span><span class="tech-tag">Lambda</span><span class="tech-tag">SAM</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://medium.com/infiq-technologies/how-to-deploy-nodejs-app-on-aws-ec2-instance-0634c54259a5"
+         target="_blank" class="blog-card terminal-window" data-aos="fade-up" data-aos-delay="80">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">post_002.md</span>
+        </div>
+        <div class="blog-img" style="background-image: url('images/EC2_Instance.webp')"></div>
+        <div class="blog-content">
+          <div class="blog-platform">medium.com &nbsp;·&nbsp; Infiq Technologies</div>
+          <h3 class="blog-title">How to Deploy Node.js App on AWS EC2 Instance</h3>
+          <div class="blog-tags">
+            <span class="tech-tag">AWS</span><span class="tech-tag">EC2</span><span class="tech-tag">Node.js</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://medium.com/@shreybanugaria/javascript-interview-questions-kit-fae34dc7ced6"
+         target="_blank" class="blog-card terminal-window" data-aos="fade-up">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">post_003.md</span>
+        </div>
+        <div class="blog-img" style="background-image: url('images/Javscript_Interview_Preparation_Guide.webp')"></div>
+        <div class="blog-content">
+          <div class="blog-platform">medium.com &nbsp;·&nbsp; @shreybanugaria</div>
+          <h3 class="blog-title">Javascript Interview Preparation Guide. All You Need to Know.</h3>
+          <div class="blog-tags">
+            <span class="tech-tag">JavaScript</span><span class="tech-tag">Interview</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://blog.yudiz.com/a-billion-dollar-math-problem-reversal-of-sha-256/"
+         target="_blank" class="blog-card terminal-window" data-aos="fade-up" data-aos-delay="80">
+        <div class="terminal-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="chrome-title">post_004.md</span>
+        </div>
+        <div class="blog-img" style="background-image: url('images/A_billiion_dollar_math_probel.jpg')"></div>
+        <div class="blog-content">
+          <div class="blog-platform">blog.yudiz.com</div>
+          <h3 class="blog-title">A Billion-Dollar Math Problem: Reversal of SHA-256</h3>
+          <div class="blog-tags">
+            <span class="tech-tag">Cryptography</span><span class="tech-tag">Math</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://medium.com/@shreybanugaria" target="_blank" class="btn-terminal">
+        <span class="btn-prefix">$</span> curl medium.com/@shreybanugaria --more
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     CONTACT SECTION
+     ========================================= -->
+<section class="section" id="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-cmd">$ ./contact.sh --mode interactive</span>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div>
+        <div class="terminal-window" data-aos="fade-up">
+          <div class="terminal-chrome">
+            <div class="chrome-dots">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            </div>
+            <span class="chrome-title">contact_info.json</span>
+          </div>
+          <div class="terminal-body">
+            <pre class="json-content">{
+  <span class="json-key">"location"</span>: <span class="json-str">"Ahmedabad, Gujarat, India"</span>,
+  <span class="json-key">"email"</span>:    <span class="json-str">"shreybanugaria10@gmail.com"</span>,
+  <span class="json-key">"phone"</span>:    <span class="json-str">"+91 9664840121"</span>,
+  <span class="json-key">"linkedin"</span>: <span class="json-str">"@shrey-banugaria"</span>,
+  <span class="json-key">"github"</span>:   <span class="json-str">"@shreybanugariya"</span>,
+  <span class="json-key">"medium"</span>:   <span class="json-str">"@shreybanugaria"</span>,
+  <span class="json-key">"status"</span>:   <span class="json-str blink-text">"[ONLINE] Open to AI Engineering roles"</span>
+}</pre>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/shrey-banugaria/" target="_blank" class="social-link">[LinkedIn]</a>
+              <a href="https://github.com/shreybanugariya" target="_blank" class="social-link">[GitHub]</a>
+              <a href="https://medium.com/@shreybanugaria" target="_blank" class="social-link">[Medium]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <div class="terminal-window" data-aos="fade-up">
+          <div class="terminal-chrome">
+            <div class="chrome-dots">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            </div>
+            <span class="chrome-title">send_message.sh</span>
+          </div>
+          <div class="terminal-body">
+            <form action="https://formspree.io/f/xrgnrrab" method="POST" class="terminal-form">
+              <div class="form-field">
+                <label><span class="prompt-mini">$</span> name=</label>
+                <input type="text" name="name" placeholder="your_name" required>
+              </div>
+              <div class="form-field">
+                <label><span class="prompt-mini">$</span> email=</label>
+                <input type="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-field">
+                <label><span class="prompt-mini">$</span> subject=</label>
+                <input type="text" name="subject" placeholder="subject_line" required>
+              </div>
+              <div class="form-field">
+                <label><span class="prompt-mini">$</span> message=</label>
+                <textarea name="message" rows="5" placeholder="your_message_here..." required></textarea>
+              </div>
+              <button type="submit" class="btn-terminal full-width">
+                <span class="btn-prefix">$</span> ./send --execute
+              </button>
             </form>
-          
-          </div>
-
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/project-3.jpg);"></div>
           </div>
         </div>
       </div>
-    </section>
-  
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    </div>
+  </div>
+</section>
 
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+<footer class="terminal-footer">
+  <div class="container">
+    <div class="footer-prompt">
+      <span class="prompt-text">shrey@portfolio:~$</span>
+      <span style="color:var(--text-dim)"> echo "Built with ☕ &amp; curiosity by Shrey Banugaria"</span>
+    </div>
+    <div class="footer-output"> © 2025 &nbsp;·&nbsp; AI Systems Engineer</div>
+  </div>
+</footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+<!-- =========================================
+     LOADER
+     ========================================= -->
+<div id="ftco-loader">
+  <div class="terminal-loader">
+    <div class="loader-logo">SB.portfolio</div>
+    <div class="loader-text" id="loader-text">INITIALIZING...</div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <div class="loader-pct" id="loader-pct">0%</div>
+  </div>
+</div>
+
+<!-- =========================================
+     SCRIPTS — keep only what's needed
+     ========================================= -->
+<script src="js/jquery.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/terminal.js"></script>
+
+</body>
 </html>
